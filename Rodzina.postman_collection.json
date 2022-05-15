@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "bb58b7d1-5b8f-4c61-b92c-a8d7dcfef091",
+		"name": "Rodzina",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createFamily",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"familyName\":\"Oni2\",\"nrOfAdults\":1,\"nrOfChildren\":1,\"nrOfinfants\":1,\"mem\":[{\"familyName\":\"Oni2\",\"givenName\":\"A\",\"age\":2},{\"familyName\":\"Oni2\",\"givenName\":\"B\",\"age\":8},{\"familyName\":\"Oni2\",\"givenName\":\"C\",\"age\":25}]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/p/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"p",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFamily",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":4}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/g/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"g",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
